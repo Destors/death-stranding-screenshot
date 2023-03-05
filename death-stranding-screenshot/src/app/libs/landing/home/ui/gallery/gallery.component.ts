@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
 import { Lightbox } from 'ng-gallery/lightbox';
+import { DS_SCREENSHOTS_IMG_PATHS } from './constants/gellery-img-paths';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -9,32 +10,11 @@ import { Lightbox } from 'ng-gallery/lightbox';
 export class GalleryComponent {
   items: GalleryItem[];
 
-  imageData = data;
+  imageData = DS_SCREENSHOTS_IMG_PATHS;
 
   constructor(public gallery: Gallery, public lightbox: Lightbox) {
     this.items = this.imageData.map(
       (item) => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl })
     );
   }
-
-  ngOnInit() {}
 }
-
-const data = [
-  {
-    srcUrl: 'https://preview.ibb.co/jrsA6R/img12.jpg',
-    previewUrl: 'https://preview.ibb.co/jrsA6R/img12.jpg',
-  },
-  {
-    srcUrl: 'https://preview.ibb.co/kPE1D6/clouds.jpg',
-    previewUrl: 'https://preview.ibb.co/kPE1D6/clouds.jpg',
-  },
-  {
-    srcUrl: 'https://preview.ibb.co/mwsA6R/img7.jpg',
-    previewUrl: 'https://preview.ibb.co/mwsA6R/img7.jpg',
-  },
-  {
-    srcUrl: 'https://preview.ibb.co/kZGsLm/img8.jpg',
-    previewUrl: 'https://preview.ibb.co/kZGsLm/img8.jpg',
-  },
-];
