@@ -1,7 +1,17 @@
 // background color
-$bg-z1: #111118;
+$bg-z1: #0f0f14;
 
 // text color
-$text-z1: #E9F8F9;
+$text-z1: #e9f8f9;
 $text-z2: #cedbdc;
 $text-z3: #b9b9b9;
+
+// bootstrap basic breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
