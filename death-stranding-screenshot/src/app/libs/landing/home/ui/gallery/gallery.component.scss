@@ -1,13 +1,10 @@
-::ng-deep gallery-core {
-  height: 100vh !important;
-}
-
 .grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3em 0;
+  padding: 1.5em 0;
+  background-color: black;
 }
 
 .grid-item {
@@ -15,8 +12,8 @@
   border-radius: 0.2em;
   overflow: hidden;
   padding: 0;
-  width: 400px;
-  height: 230px;
+  width: 500px;
+  height: 300px;
 }
 
 .grid-image {
