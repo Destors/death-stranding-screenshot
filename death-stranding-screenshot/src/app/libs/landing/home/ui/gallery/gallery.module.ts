@@ -8,14 +8,5 @@ import { LightboxModule } from 'ng-gallery/lightbox';
   declarations: [GalleryComponent],
   imports: [CommonModule, GalleryModule, LightboxModule],
   exports: [GalleryComponent],
-  providers: [
-    {
-      provide: GALLERY_CONFIG,
-      useValue: {
-        dots: true,
-        imageSize: 'cover',
-      },
-    },
-  ],
 })
 export class DSGalleryModule {}

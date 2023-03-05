@@ -9,12 +9,22 @@ import { DS_SCREENSHOTS_IMG_PATHS } from './constants/gellery-img-paths';
 })
 export class GalleryComponent {
   items: GalleryItem[];
+  galleryId = 'myLightbox';
 
   imageData = DS_SCREENSHOTS_IMG_PATHS;
 
-  constructor(public gallery: Gallery, public lightbox: Lightbox) {
+  constructor(public gallery: Gallery, private lightbox: Lightbox) {
     this.items = this.imageData.map(
       (item) => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl })
     );
+
+    const galleryRef = this.gallery.ref(this.galleryId);
+    galleryRef.load(this.items);
+  }
+
+  openInFullScreen(index: number) {
+    this.lightbox.open(index, this.galleryId, {
+      panelClass: 'fullscreen',
+    });
   }
 }

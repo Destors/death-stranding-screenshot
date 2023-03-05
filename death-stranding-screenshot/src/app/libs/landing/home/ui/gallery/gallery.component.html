@@ -1,1 +1,18 @@
-<gallery [items]="items"></gallery>
+<!-- <gallery
+  [items]="items"
+  fluid
+  [loadingStrategy]="'preload'"
+  [autoPlay]="true"
+  [playerInterval]="5000"
+  thumbPosition="left"
+></gallery> -->
+
+<div class="grid">
+  <div
+    class="grid-item"
+    *ngFor="let item of items; let i = index"
+    (click)="openInFullScreen(i)"
+  >
+    <img class="grid-image" [src]="item?.data?.thumb" />
+  </div>
+</div>
