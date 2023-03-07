@@ -24,4 +24,22 @@
   height: 100%;
   background-size: cover;
   background-position: center center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.img-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.download {
+  text-decoration: none;
+  color: rgb(176, 176, 176);
+  &:hover {
+    opacity: 0.9;
+  }
 }

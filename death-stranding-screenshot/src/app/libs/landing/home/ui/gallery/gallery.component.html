@@ -8,11 +8,14 @@
 ></gallery> -->
 
 <div class="grid">
-  <div
-    class="grid-item"
-    *ngFor="let item of items; let i = index"
-    (click)="openInFullScreen(i)"
-  >
-    <img class="grid-image" [src]="item?.data?.thumb" />
+  <div class="grid-item" *ngFor="let item of items; let i = index">
+    <img
+      class="grid-image"
+      [src]="item?.data?.src"
+      (click)="openInFullScreen(i)"
+    />
+    <div class="img-buttons">
+      <a class="download" [href]="item?.data?.thumb" download>Download img</a>
+    </div>
   </div>
 </div>
