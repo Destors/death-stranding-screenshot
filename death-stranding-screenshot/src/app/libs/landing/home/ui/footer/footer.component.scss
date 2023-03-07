@@ -1,0 +1,19 @@
+@use "../../../../ui/stylesheets/dark/variables.scss" as store;
+
+.footer {
+  background-color: store.$bg-z1;
+  color: store.$text-z1;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.footer--card {
+  margin-bottom: 25px;
+  padding-right: 15px;
+}

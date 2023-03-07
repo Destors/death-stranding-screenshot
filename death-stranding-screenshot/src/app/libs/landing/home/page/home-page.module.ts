@@ -5,6 +5,7 @@ import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomePageComponent } from './home-page.component';
 import { MainCtaModule } from '../ui/main-cta/main-cta.module';
 import { DSGalleryModule } from '../ui/gallery/gallery.module';
+import { FooterModule } from '../ui/footer/footer.module';
 
 @NgModule({
   declarations: [HomePageComponent],
@@ -13,6 +14,7 @@ import { DSGalleryModule } from '../ui/gallery/gallery.module';
     HomePageRoutingModule,
     MainCtaModule,
     DSGalleryModule,
+    FooterModule,
   ],
 })
 export class HomePageModule {}
