@@ -5,11 +5,27 @@
   color: store.$text-z1;
 
   & .main-cta--header {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
-    letter-spacing: 3rem;
-    line-height: 5rem;
+    letter-spacing: 1rem;
+    line-height: 2rem;
     font-weight: 400;
+  }
+
+  @media screen and (min-width: map-get(store.$grid-breakpoints, "sm")) {
+    .main-cta--header {
+      font-size: 3rem;
+      letter-spacing: 2rem;
+      line-height: 4rem;
+    }
+  }
+
+  @media screen and (min-width: map-get(store.$grid-breakpoints, "md")) {
+    .main-cta--header {
+      font-size: 3rem;
+      letter-spacing: 3rem;
+      line-height: 5rem;
+    }
   }
 
   & .main-cta--desc {

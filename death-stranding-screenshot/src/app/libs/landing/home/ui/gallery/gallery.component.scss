@@ -1,10 +1,12 @@
+@use "../../../../ui/stylesheets/dark/variables.scss" as store;
+
 .grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 1.5em 0;
-  background-color: black;
+  background-color: store.$bg-z1;
 }
 
 .grid-item {
@@ -12,8 +14,8 @@
   border-radius: 0.2em;
   overflow: hidden;
   padding: 0;
-  width: 500px;
-  height: 300px;
+  width: 30vw;
+  height: auto;
 }
 
 .grid-image {
