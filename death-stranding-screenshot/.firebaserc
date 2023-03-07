@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "death-stranding-screenshots": {
+      "hosting": {
+        "death-stranding-screenshot": [
+          "death-stranding-screenshots"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "death-stranding-screenshots"
+  }
+}
