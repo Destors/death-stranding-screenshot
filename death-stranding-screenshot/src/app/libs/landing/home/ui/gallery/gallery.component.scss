@@ -1,5 +1,9 @@
 @use "../../../../ui/stylesheets/dark/variables.scss" as store;
 
+.ds-gallery {
+  background-color: store.$bg-z1;
+}
+
 .grid {
   display: flex;
   justify-content: center;
