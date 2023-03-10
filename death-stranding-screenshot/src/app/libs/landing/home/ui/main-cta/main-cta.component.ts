@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { mainCtaDesc } from './data/main-cta.txt';
+import { mainCtaDesc } from './constants/main-cta';
 
 @Component({
   selector: 'app-main-cta',

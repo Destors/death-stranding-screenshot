@@ -20,6 +20,7 @@ export class GalleryComponent {
 
     const galleryRef = this.gallery.ref(this.galleryId);
     galleryRef.load(this.items);
+    galleryRef.setConfig({ nav: false, counter: false });
   }
 
   openInFullScreen(index: number) {
